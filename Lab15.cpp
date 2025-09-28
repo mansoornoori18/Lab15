@@ -11,6 +11,13 @@ class Movie {
     int yearReleased;              // Year the movie was released
     string screenWriter;           // Screenwriter's name
 
+    public:
+    // Setter to assign values
+    void setTitle(const string& t){ title = t; }
+    void setYearReleased(int y) { yearReleased = y; }
+    void setScreenWriter(const string& sw) { return screenWriter; 
+
+
 };
 
 
