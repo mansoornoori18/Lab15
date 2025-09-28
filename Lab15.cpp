@@ -49,7 +49,15 @@ int main(){
     int year;
 
     // Read the file
-    for (int i = 0; i < SIZE; ++i)
+    for (int i = 0; i < SIZE; ++i){
+        getline(inFile, title);          // Read movie title
+        inFile >> year;                  // Read year
+        inFile.ignore();                // Skip the newline character after the number
+        getline(inFile, screenWriter);  // Read screenwriter's name
+
+        // Use setters to populate the Movie object
+        movies[i].setTitle(title);
+    }
 
 
     cout << "hello" << endl;
