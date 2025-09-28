@@ -57,11 +57,15 @@ int main(){
 
         // Use setters to populate the Movie object
         movies[i].setTitle(title);
+        movies[i].setYearReleased(year);
+        movies[i].setScreenWriter(screenWriter);
     }
 
-
-    cout << "hello" << endl;
-
+    // Output all movies
+    for (int i = 0; i < SIZE; ++i){
+        movies[i].print();       // Call for each movie and print
+    }
+    
     return 0;
 
 }
