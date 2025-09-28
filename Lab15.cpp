@@ -15,7 +15,20 @@ class Movie {
     // Setter to assign values
     void setTitle(const string& t){ title = t; }
     void setYearReleased(int y) { yearReleased = y; }
-    void setScreenWriter(const string& sw) { return screenWriter; 
+    void setScreenWriter(const string& sw) { screenWriter = sw; }
+    
+    // Getter methods to retrieve values
+    string getTitle() const { return title; }
+    int getYearReleased() const { return yearReleased; }
+    string getScreenWriter() const { return screenWriter; }
+
+    // to display the  movie information
+    void print() const {
+        cout << "Movie: " << screenWriter << endl;
+        cout << "    Year released: " << yearReleased << endl;
+    }
+
+
 
 
 };
