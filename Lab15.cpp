@@ -26,18 +26,18 @@ class Movie {
     void print() const {
         cout << "Movie: " << screenWriter << endl;
         cout << "    Year released: " << yearReleased << endl;
+        cout << "    Screenwriter: " << title << endl;
+        cout << endl;
+
     }
-
-
-
-
 };
 
-
-using namespace std;
-
-
+// main function 
 int main(){
+
+    // Open the input file
+    ifstream inFile("input.txt");
+    if (!inFile)
 
 
     cout << "hello" << endl;
