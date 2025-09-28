@@ -37,7 +37,19 @@ int main(){
 
     // Open the input file
     ifstream inFile("input.txt");
-    if (!inFile)
+    if (!inFile){
+        cout << "Error opening input.txt" << endl;
+        return 1;  // Exit if file couldn't be opened
+    }
+
+    const int SIZE = 4;            // there are 4 records
+    Movie movies[SIZE];            // Array of 4 Movie objects
+
+    string title, screenWriter;    // Temporary variables to hold input
+    int year;
+
+    // Read the file
+    for (int i = 0; i < SIZE; ++i)
 
 
     cout << "hello" << endl;
